@@ -3,11 +3,13 @@
 > **Created by [Tushar Parlikar](https://github.com/TusharParlikar)**  
 > Advanced VS Code extension for intelligent bookmarking with automatic "Last Activity" saving
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.74.0+-green.svg)](https://code.visualstudio.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue.svg)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Author](https://img.shields.io/badge/author-Tushar%20Parlikar-brightgreen.svg)](https://github.com/TusharParlikar)
+[![Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-blue.svg)](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/TusharParlikar/SMART-BOOKMARKS)
 
 Never lose your place in code again! Smart Bookmarks automatically saves your cursor position and provides intelligent bookmark management with a beautiful, modern interface.
 
@@ -26,18 +28,32 @@ Never lose your place in code again! Smart Bookmarks automatically saves your cu
 
 ## 🚀 Quick Start
 
-### Installation
+### 📦 Installation Options
 
-#### From VS Code Marketplace
+#### Option 1: VS Code Marketplace (Recommended)
 1. Open VS Code
-2. Go to Extensions (`Ctrl+Shift+X`)
-3. Search for "Smart Bookmarks"
-4. Click Install
+2. Go to Extensions (`Ctrl+Shift+X` or `Cmd+Shift+X`)
+3. Search for **"Smart Bookmarks Pro by Tushar Parlikar"**
+4. Click **Install**
 
-#### From Command Line
+#### Option 2: Command Line Installation
 ```bash
 code --install-extension TusharParlikar.smart-bookmarks
 ```
+
+#### Option 3: Manual Installation
+1. Download the latest `.vsix` file from [GitHub Releases](https://github.com/TusharParlikar/SMART-BOOKMARKS/releases)
+2. Open VS Code
+3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P`)
+4. Type "Extensions: Install from VSIX"
+5. Select the downloaded `.vsix` file
+
+### 📱 Extension Links
+- **🌐 VS Code Marketplace**: [Install Smart Bookmarks Pro](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+- **📱 GitHub Repository**: [Source Code & Issues](https://github.com/TusharParlikar/SMART-BOOKMARKS)
+- **📋 Release Notes**: [Latest Updates](https://github.com/TusharParlikar/SMART-BOOKMARKS/releases)
+- **🐛 Bug Reports**: [Report Issues](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues)
+- **💡 Feature Requests**: [Suggest Features](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues/new)
 
 ### Basic Usage
 
@@ -240,7 +256,29 @@ F5 or Run > Start Debugging
 
 ## 📄 Changelog
 
-### [1.0.0] - 2025-06-12
+### [1.0.2] - 2025-06-12 (Latest)
+
+#### 🎨 Branding Updates
+- **Enhanced Name**: Updated to "Smart Bookmarks Pro by Tushar Parlikar"
+- **Professional Branding**: Added developer attribution throughout the extension
+- **Marketplace Optimization**: Improved discoverability and professional presentation
+- **Documentation**: Enhanced README with comprehensive installation and usage guides
+
+#### 🔗 Links & Resources
+- **Marketplace**: [Smart Bookmarks Pro](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+- **GitHub**: [Source Code Repository](https://github.com/TusharParlikar/SMART-BOOKMARKS)
+- **Issues**: [Bug Reports & Feature Requests](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues)
+- **Releases**: [Version History](https://github.com/TusharParlikar/SMART-BOOKMARKS/releases)
+
+### [1.0.1] - 2025-06-12
+
+#### 🛠️ Bug Fixes & Improvements
+- Fixed compilation issues
+- Enhanced error handling
+- Performance optimizations
+- Code cleanup and refactoring
+
+### [1.0.0] - 2025-06-12 (Initial Release)
 
 #### ✨ Added
 - **Auto-Save Last Activity**: Automatic bookmark creation when closing files
@@ -293,38 +331,81 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## 🆘 Support & Community
 
-If you encounter any problems or have feature requests:
+### 📞 Get Help
+If you encounter any problems or have questions:
 
-1. Check the [issues](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues) page
-2. Create a new issue with detailed information
-3. Include your VS Code version and extension version
+1. **📖 Documentation**: Check this README for comprehensive guides
+2. **🐛 Bug Reports**: [Create an issue](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues/new?template=bug_report.md) on GitHub
+3. **💡 Feature Requests**: [Suggest new features](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues/new?template=feature_request.md)
+4. **❓ Questions**: [Ask questions](https://github.com/TusharParlikar/SMART-BOOKMARKS/discussions) in GitHub Discussions
+
+### 📋 When Reporting Issues
+Please include:
+- VS Code version (`Help > About`)
+- Extension version (check in Extensions panel)
+- Operating system (Windows/macOS/Linux)
+- Steps to reproduce the issue
+- Screenshots if applicable
+
+### 🔗 Quick Links
+- **Extension Page**: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+- **Source Code**: [GitHub Repository](https://github.com/TusharParlikar/SMART-BOOKMARKS)
+- **Latest Release**: [Download VSIX](https://github.com/TusharParlikar/SMART-BOOKMARKS/releases/latest)
+- **Issue Tracker**: [Report Problems](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues)
 
 ## 🌟 Show Your Support
 
-If you find this extension helpful, please:
-- ⭐ Star the repository on GitHub
-- 📝 Leave a review on the VS Code Marketplace
-- 🐛 Report bugs or suggest features
-- 💡 Share with your fellow developers
+If you find Smart Bookmarks Pro helpful, please consider:
+
+### ⭐ Rate & Review
+- **⭐ Star the GitHub Repository**: [Give us a star](https://github.com/TusharParlikar/SMART-BOOKMARKS)
+- **📝 Marketplace Review**: [Leave a review](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks&ssr=false#review-details)
+- **📢 Share with Friends**: Tell other developers about Smart Bookmarks Pro
+
+### 🤝 Contribute
+- **🐛 Report Bugs**: [Issue Tracker](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues)
+- **💡 Suggest Features**: [Feature Requests](https://github.com/TusharParlikar/SMART-BOOKMARKS/issues/new?template=feature_request.md)
+- **🔧 Contribute Code**: [Pull Requests Welcome](https://github.com/TusharParlikar/SMART-BOOKMARKS/pulls)
+- **📚 Improve Docs**: Help make documentation better
+
+### 📊 Extension Stats
+- **Current Version**: 1.0.2
+- **VS Code Compatibility**: 1.74.0+
+- **Platform Support**: Windows, macOS, Linux  
+- **License**: MIT (Open Source)
 
 ## 👨‍💻 About the Developer
 
-**Tushar Parlikar** is a passionate developer focused on creating productivity tools for developers. This extension represents dedication to solving real developer problems and improving coding workflows.
+**Tushar Parlikar** is a passionate developer focused on creating productivity tools that solve real developer problems. Smart Bookmarks Pro represents a commitment to improving coding workflows and developer experience.
 
-### 🔗 Connect With Me
-- 🌐 **GitHub**: [TusharParlikar](https://github.com/TusharParlikar)
-- 📧 **Email**: tparlikar497@gmail.com
-- 💼 **Extension**: [Smart Bookmarks on Marketplace](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+### 🚀 My Extensions
+- **Smart Bookmarks Pro**: Advanced bookmarking with auto-save features
+- *More extensions coming soon...*
 
-### 💭 Developer Note
-This extension was crafted with care to solve the common problem of losing your place in code. Every feature was designed based on real developer needs and testing. If you have suggestions or encounter issues, I'm always happy to help!
+### 🔗 Connect & Follow
+- **🌐 GitHub Profile**: [TusharParlikar](https://github.com/TusharParlikar) - Follow for updates
+- **📦 VS Code Publisher**: [TusharParlikar](https://marketplace.visualstudio.com/publishers/TusharParlikar) - See all extensions
+- **💼 Professional Contact**: Available for collaboration and feedback
+
+### 💭 Developer Philosophy
+> "Great tools should be invisible - they should solve problems without getting in your way. Smart Bookmarks Pro embodies this philosophy by automatically saving your place in code, so you never lose context."
+
+### 🎯 Future Plans
+- 🔄 Regular updates based on user feedback
+- 🆕 New productivity extensions in development  
+- 🤝 Open source contributions and community building
+- 📱 Cross-platform developer tool ecosystem
 
 ---
 
-**🚀 Transform your VS Code experience with Smart Bookmarks - Never lose your place in code again!**
+**🚀 Ready to never lose your place in code again?**
 
-*Created by [Tushar Parlikar](https://github.com/TusharParlikar) with Claude AI assistance*
+[**📥 Install Smart Bookmarks Pro Now →**](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
 
-*Made with ❤️ for the developer community*
+---
+
+*🔖 Smart Bookmarks Pro - Created by [Tushar Parlikar](https://github.com/TusharParlikar)*  
+*📅 Last Updated: June 12, 2025*  
+*⭐ Made with ❤️ for the developer community*

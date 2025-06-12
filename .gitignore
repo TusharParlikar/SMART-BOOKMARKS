@@ -29,5 +29,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Development and documentation files (not for public repo)
 GITHUB_UPLOAD_GUIDE
 VS_CODE_PUBLISHING_GUIDE.md
+UPDATE.md
