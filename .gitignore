@@ -1,0 +1,32 @@
+# Build outputs
+out/
+dist/
+
+# Dependencies
+node_modules/
+
+# VS Code test files
+.vscode-test/
+
+# Package files (exclude from git, generated during CI/CD)
+*.vsix
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE settings (keep workspace settings but ignore user-specific settings)
+.vscode/settings.json
+
+# Temporary files
+*.tmp
+*.temp
+GITHUB_UPLOAD_GUIDE

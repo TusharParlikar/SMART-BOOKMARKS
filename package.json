@@ -1,0 +1,266 @@
+{
+  "name": "smart-bookmarks",
+  "displayName": "Smart Bookmarks",
+  "description": "Advanced VS Code extension for intelligent bookmarking with automatic 'Last Activity' saving. Never lose your place in code again!",
+  "version": "1.0.0",  "publisher": "TusharParlikar",
+  "author": {
+    "name": "Tushar Parlikar",
+    "email": "tparlikar497@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/TusharParlikar/SMART-BOOKMARKS#readme",
+  "bugs": {
+    "url": "https://github.com/TusharParlikar/SMART-BOOKMARKS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TusharParlikar/SMART-BOOKMARKS.git"
+  },"engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "bookmarks",
+    "navigation",
+    "productivity",
+    "code navigation",
+    "auto-save",
+    "last activity",
+    "history",
+    "smart bookmarks",
+    "code position",
+    "cursor tracking"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "smartBookmarks.addBookmark",
+        "title": "Add Bookmark",
+        "icon": "$(bookmark)"
+      },
+      {
+        "command": "smartBookmarks.removeBookmark",
+        "title": "Remove Bookmark",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "smartBookmarks.clearAll",
+        "title": "Clear All Bookmarks",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "smartBookmarks.goToBookmark",
+        "title": "Go to Bookmark",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "smartBookmarks.showHistory",
+        "title": "Show Navigation History",
+        "icon": "$(history)"
+      },
+      {
+        "command": "smartBookmarks.refreshBookmarks",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "smartBookmarks.exportBookmarks",
+        "title": "Export Bookmarks",
+        "icon": "$(export)"
+      },
+      {
+        "command": "smartBookmarks.importBookmarks",
+        "title": "Import Bookmarks",
+        "icon": "$(import)"
+      },      {
+        "command": "smartBookmarks.openWebview",
+        "title": "Open Bookmarks Panel",
+        "icon": "$(symbol-class)"
+      },
+      {
+        "command": "smartBookmarks.openPremiumView",
+        "title": "Smart Bookmarks: Open Premium View",
+        "icon": "$(sparkle)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "smartBookmarks",
+          "title": "Smart Bookmarks",
+          "icon": "$(bookmark)"
+        }
+      ]
+    },
+    "views": {
+      "smartBookmarks": [
+        {
+          "id": "bookmarksWelcome",
+          "name": "Getting Started",
+          "icon": "$(info)",
+          "when": "!smartBookmarks.hasBookmarks"
+        },
+        {
+          "id": "bookmarksList",
+          "name": "Bookmarks",
+          "icon": "$(bookmark)",
+          "when": "smartBookmarks.hasBookmarks"
+        },        {
+          "id": "historyView",
+          "name": "Navigation History",
+          "icon": "$(history)"
+        },
+        {
+          "id": "smartBookmarks.webview",
+          "type": "webview",
+          "name": "Premium View",
+          "icon": "$(sparkle)"
+        }
+      ]
+    },
+    "viewsWelcome": [      {
+        "view": "bookmarksWelcome",
+        "contents": "Welcome to Smart Bookmarks! 📚\n\nQuickly navigate your code with smart bookmarking.\n\n[Add Your First Bookmark](command:smartBookmarks.addBookmark)\n\n[✨ Open Premium View](command:smartBookmarks.openPremiumView)\n\nTips:\n• Use Ctrl+Shift+B to bookmark current line\n• Use Ctrl+Shift+G to navigate to bookmarks\n• Navigation history is tracked automatically\n\n[Learn More](https://github.com/TusharParlikar/SMART-BOOKMARKS#readme)",
+        "when": "!smartBookmarks.hasBookmarks"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "smartBookmarks.addBookmark",
+          "group": "navigation",
+          "when": "editorTextFocus"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "smartBookmarks.refreshBookmarks",
+          "when": "view == bookmarksList",
+          "group": "navigation@1"
+        },
+        {
+          "command": "smartBookmarks.clearAll",
+          "when": "view == bookmarksList && smartBookmarks.hasBookmarks",
+          "group": "navigation@2"
+        },
+        {
+          "command": "smartBookmarks.exportBookmarks",
+          "when": "view == bookmarksList && smartBookmarks.hasBookmarks",
+          "group": "navigation@3"
+        },
+        {
+          "command": "smartBookmarks.importBookmarks",
+          "when": "view == bookmarksList",
+          "group": "navigation@4"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "smartBookmarks.removeBookmark",
+          "when": "view == bookmarksList && viewItem == bookmark",
+          "group": "inline@1"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "smartBookmarks.addBookmark",
+          "when": "editorIsOpen"
+        },
+        {
+          "command": "smartBookmarks.goToBookmark",
+          "when": "smartBookmarks.hasBookmarks"
+        },
+        {
+          "command": "smartBookmarks.showHistory"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "smartBookmarks.addBookmark",
+        "key": "ctrl+shift+b",
+        "mac": "cmd+shift+b",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "smartBookmarks.goToBookmark",
+        "key": "ctrl+shift+g",
+        "mac": "cmd+shift+g"
+      }
+    ],
+    "configuration": {
+      "title": "Smart Bookmarks",
+      "properties": {
+        "smartBookmarks.maxHistorySize": {
+          "type": "number",
+          "default": 100,
+          "minimum": 10,
+          "maximum": 1000,
+          "description": "Maximum number of history entries to keep"
+        },
+        "smartBookmarks.autoSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically save bookmarks to workspace"
+        },
+        "smartBookmarks.showLinePreview": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show code preview in bookmark tooltips"
+        },        "smartBookmarks.highlightBookmarkedLines": {
+          "type": "boolean",
+          "default": true,
+          "description": "Highlight bookmarked lines in the editor"
+        },
+        "smartBookmarks.autoBookmarkOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically create bookmarks when saving important files"
+        },
+        "smartBookmarks.autoBookmarkOnClose": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically create bookmarks when closing files/tabs"
+        },
+        "smartBookmarks.autoBookmarkOnSwitch": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically create bookmarks when switching between files (can create many bookmarks)"
+        },
+        "smartBookmarks.autoBookmarkImportantFiles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Only auto-bookmark important files (main, index, app, etc.)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vscode/vsce": "^2.32.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.4"
+  }
+}
