@@ -1,11 +1,11 @@
 {
   "name": "smart-bookmarks",
-  "displayName": "Smart Bookmarks",
-  "description": "Advanced VS Code extension for intelligent bookmarking with automatic 'Last Activity' saving. Never lose your place in code again!",
-  "version": "1.0.0",  "publisher": "TusharParlikar",
-  "author": {
+  "displayName": "Smart Bookmarks by Tushar Parlikar",
+  "description": "🔖 Advanced VS Code extension for intelligent bookmarking with automatic 'Last Activity' saving. Created by Tushar Parlikar - Never lose your place in code again!",
+  "version": "1.0.0","publisher": "TusharParlikar",  "author": {
     "name": "Tushar Parlikar",
-    "email": "tparlikar497@gmail.com"
+    "email": "tparlikar497@gmail.com",
+    "url": "https://github.com/TusharParlikar"
   },
   "license": "MIT",
   "homepage": "https://github.com/TusharParlikar/SMART-BOOKMARKS#readme",
@@ -30,8 +30,9 @@
     "last activity",
     "history",
     "smart bookmarks",
-    "code position",
-    "cursor tracking"
+    "code position",    "cursor tracking",
+    "Tushar Parlikar",
+    "developer tools",    "file navigation"
   ],
   "icon": "images/icon.png",
   "galleryBanner": {

@@ -1,11 +1,13 @@
-# 🎯 Smart Bookmarks
+# 🔖 Smart Bookmarks
 
-> **Advanced VS Code extension for intelligent bookmarking with automatic "Last Activity" saving**
+> **Created by [Tushar Parlikar](https://github.com/TusharParlikar)**  
+> Advanced VS Code extension for intelligent bookmarking with automatic "Last Activity" saving
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.74.0+-green.svg)](https://code.visualstudio.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue.svg)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Author](https://img.shields.io/badge/author-Tushar%20Parlikar-brightgreen.svg)](https://github.com/TusharParlikar)
 
 Never lose your place in code again! Smart Bookmarks automatically saves your cursor position and provides intelligent bookmark management with a beautiful, modern interface.
 
@@ -307,8 +309,22 @@ If you find this extension helpful, please:
 - 🐛 Report bugs or suggest features
 - 💡 Share with your fellow developers
 
+## 👨‍💻 About the Developer
+
+**Tushar Parlikar** is a passionate developer focused on creating productivity tools for developers. This extension represents dedication to solving real developer problems and improving coding workflows.
+
+### 🔗 Connect With Me
+- 🌐 **GitHub**: [TusharParlikar](https://github.com/TusharParlikar)
+- 📧 **Email**: tparlikar497@gmail.com
+- 💼 **Extension**: [Smart Bookmarks on Marketplace](https://marketplace.visualstudio.com/items?itemName=TusharParlikar.smart-bookmarks)
+
+### 💭 Developer Note
+This extension was crafted with care to solve the common problem of losing your place in code. Every feature was designed based on real developer needs and testing. If you have suggestions or encounter issues, I'm always happy to help!
+
 ---
 
 **🚀 Transform your VS Code experience with Smart Bookmarks - Never lose your place in code again!**
+
+*Created by [Tushar Parlikar](https://github.com/TusharParlikar) with Claude AI assistance*
 
 *Made with ❤️ for the developer community*
